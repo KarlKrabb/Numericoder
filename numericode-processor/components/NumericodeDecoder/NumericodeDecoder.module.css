@@ -1,0 +1,72 @@
+
+.pageContainer{
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.decoderContainer{
+    width: 40rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.numericodeInputWrapper{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.numericodeInputBox{
+    width: 100%;
+    background-color: grey;
+    resize: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: inherit;
+}
+
+.butttonWrapper{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.decodeButton{
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5rem;
+    color: inherit;
+    background-color: #1ec01e;
+    padding: 0.5rem;
+}
+
+.decodeButton:hover{
+    background-color: #22d822;
+}
+
+.decodeButton:active{
+    background-color: #1ec01e;
+}
+
+.encodeButton{
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5rem;
+    color: inherit;
+    background-color: #1e77c0;
+    padding: 0.5rem;
+}
+
+.encodeButton:hover{
+    background-color: #1a66a5;
+}
+
+.encodeButton:active{
+    background-color: #1e77c0;
+}
+
+.error {
+    color: white;
+    background-color: red;
+}
