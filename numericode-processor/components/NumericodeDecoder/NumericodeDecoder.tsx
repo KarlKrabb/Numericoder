@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./NumericodeDecoder.module.css";
 import useNumericoder from "../../hooks/useNumericoder";
 
@@ -10,6 +10,13 @@ const NumericodeDecoder = () => {
     const [numericodeInput, setNumericodeInput] = useState<string>();
     const [numericodeOutput, setNumericodeOutput] = useState<string>();
 
+    useEffect(() => {
+        const message = sessionStorage.getItem("message");
+        if(message){
+            setNumericodeInput(message);
+        }
+    },[]);
+
     const handleDecode = async (message : string) => {
         const response = await decodeNumericode(message);
         setNumericodeOutput(response);
@@ -18,6 +25,10 @@ const NumericodeDecoder = () => {
     const handleEncode = async (message : string) => {
         const response = await encodeToNumericode(message);
         setNumericodeOutput(response);
+    };
+
+    const handleSessionStorage = (input: string) => {
+        sessionStorage.setItem("message", input);
     };
 
     return (
@@ -35,7 +46,10 @@ const NumericodeDecoder = () => {
                             cols={30}
                             rows={10}
                             value={numericodeInput}
-                            onChange={e => setNumericodeInput(e.target.value)}
+                            onChange={(e) => {
+                                setNumericodeInput(e.target.value);
+                                handleSessionStorage(e.target.value);
+                            }}
                         />
                     </div>
                     <div className={styles.butttonWrapper}>
