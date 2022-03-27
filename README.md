@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-This is a numericode encoder and decoder coded using Next.js, React Typescript and Jest/React Testing.
+This is a numericode encoder and decoder coded using Next.js, React Typescript with unit tests done using Jest/React. I also have added eslinting configs as well as the eslint plugin for vscode.
 
 The front end is a single page web app with a react component that contains a single input, with both the encode and decode buttons below, as well as the output paragraph.
 
@@ -35,4 +35,12 @@ In your terminal or code editor of choice naviagate to the project directory and
 ### Using the Web App
 ```
 Go to your browser and navigate to https://localhost:3000
+```
+
+### Running Unit Tests
+```
+In your terminal or code editor of choice naviagate to the project directory and run:
+
+- npm test
+
 ```

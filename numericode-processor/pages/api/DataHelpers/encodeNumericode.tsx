@@ -15,7 +15,7 @@ const encodeNumericode = (input : string) : string => {
                     return numericodePair.letter == letter.toUpperCase();
                 })?.number;
 
-                if(!number) throw new Error("Please only use alphabet charancters in your message. numbers and special characters will not encode.");
+                if(!number) throw new Error("Please only use letters in your message. Numbers and special characters cannot be encoded.");
                 
                 const randomEncodingMultiplier = (Math.floor(Math.random() * 5) + 1);
 
