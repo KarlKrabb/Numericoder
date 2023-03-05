@@ -10,37 +10,32 @@ It makes a call to the Next API, where the messages are either encoded or decoce
 
 ---
 
-### Running Standard Node Instance
-```
-Make sure to have node and npm installed on your computer/environment of choice.
-
-In your terminal or code editor of choice naviagate to the project directory and run:
-
-- npm install
-- npm start 
-
-```
----
-
 ### Running in Docker
 
-```
 Make sure to have Docker installed on your computer/environment of choice.
 
-In your terminal or code editor of choice naviagate to the project directory and run:
-
+Run:
+```
 - docker-compose up -d --build
 ```
 
-### Using the Web App
-```
-Go to your browser and navigate to https://localhost:3000
-```
+---
 
-### Running Unit Tests
+### Dev Environment
+Run
 ```
-In your terminal or code editor of choice naviagate to the project directory and run:
+npm install
 
-- npm test
+next dev
+```
+>Web App: https://localhost:3000
 
+>API: https://localhost:3000/api
+
+---
+
+### Unit Tests
+Run:
+```
+npm test
 ```

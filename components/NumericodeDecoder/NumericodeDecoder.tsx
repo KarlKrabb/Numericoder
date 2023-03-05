@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import styles from "./NumericodeDecoder.module.css";
+import styles from "../../styles/NumericodeDecoder.module.css";
 import useNumericoder from "../../hooks/useNumericoder";
-import Image from "next/image";
 
 const NumericodeDecoder = () => {
 
@@ -34,12 +33,9 @@ const NumericodeDecoder = () => {
     return (
         <div className={styles.pageContainer}>
             <header className={styles.headerSection}>
-                <Image 
-                    src="/TrussleLogo.png" 
-                    alt="Trussle Logo"
-                    width={106}
-                    height={25}
-                />
+                <h1>
+                    Numericoder
+                </h1>
             </header>
             <div className={styles.sectionLayout}>
                 <div className={styles.decoderContainer}>
