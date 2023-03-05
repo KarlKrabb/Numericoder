@@ -3,15 +3,13 @@ import encodeNumericode from "../pages/api/DataHelpers/encodeNumericode";
 
 test("Check decoder with examples", () => {
     
-    const testStringOne = "13 27 26 5";
-    const testStringTwo = "432 21 19 5832 5 135 14 6561 59049 15 486 275562";
-    const testStringThree = "20 486 21 513 19 324 5 21924 540 135 3 8";
-    const testStringFour = "8 5 324 8748 295245 730 23 405 13122 12 108";
+    const testStringOne = "14580 157464 129140163 10097379 72 4782969 513 72 27 72 14580 98415 513 286978140";
+    const testStringTwo = "14580 5832 135 336 9034497 413343 129140163 59049 216513 336 1062882 9565938 7971615 621 378 336 162 7971615 17496 336 5314410 413343 9477 229582512 13851 336 10935 594 135 354294 336 540 114791256 3645 336 172186884 531441 511758 675 336 78732 405 100442349";
+    const testStringThree = "8 5 324 8748 295245 730 23 405 13122 12 108";
 
-    expect(decodeNumericode(testStringOne)).toBe("MAZE");
-    expect(decodeNumericode(testStringTwo)).toBe("PUSHEENICORN");
-    expect(decodeNumericode(testStringThree)).toBe("TRUSSLE TECH");
-    expect(decodeNumericode(testStringFour)).toBe("HELLO WORLD");
+    expect(decodeNumericode(testStringOne)).toBe("THIS IS A TEST");
+    expect(decodeNumericode(testStringTwo)).toBe("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG");
+    expect(decodeNumericode(testStringThree)).toBe("HELLO WORLD");
 });
 
 test("Check encode then decode", () => {

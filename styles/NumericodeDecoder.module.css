@@ -1,8 +1,9 @@
 
 .pageContainer{
-    color: #bbe4c3;
-    background-color: #d9ffd6;
-    border: 1rem solid #ff7396;
+    color: #00414c;
+    background-color: #bbe4c3;
+    border: 1rem solid #00414c;
+    height: 100%;
 }
 
 .headerSection{
@@ -20,6 +21,7 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     width: 40rem;
+    color: #bbe4c3;
     border: 1px solid #d9ffd6;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -53,20 +55,20 @@
     font-size: 1em;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 3px 00 #99455a;
+    box-shadow: 0 3px 00 #458e99;
     transition: .1s linear 0s;
     color: #00414c;
-    background-color: #ff7396;
+    background-color: #73ffff;
     padding: 10px;
     cursor: pointer;
 }
 
 .decodeButton:hover{
-    background-color: #ff95b0;
+    background-color: #53b2c1;
 }
 
 .decodeButton:active{
-    background-color: #db6482;
+    background-color: #458e99;
 }
 
 .encodeButton{
@@ -75,19 +77,19 @@
     border: none;
     border-radius: 8px;
     color: #00414c;
-    box-shadow: 0 3px 00 #99455a;
+    box-shadow: 0 3px 00 #458e99;
     transition: .1s linear 0s;
-    background-color: #ff7396;
+    background-color: #73ffff;
     padding: 0.5rem;
     cursor: pointer;
 }
 
 .encodeButton:hover{
-    background-color: #ff95b0;
+    background-color: #53b2c1;
 }
 
 .encodeButton:active{
-    background-color: #db6482;
+    background-color: #458e99;
 }
 
 .outputBox{
