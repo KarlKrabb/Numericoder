@@ -16,21 +16,18 @@ Make sure to have Docker installed on your computer/environment of choice.
 
 Run:
 ```
-- docker-compose up -d --build
+docker-compose up -d --build
 ```
 
 ---
 
-### Dev Environment
+### Node Dev Environment
 Run
 ```
 npm install
 
 next dev
 ```
->Web App: https://localhost:3000
-
->API: https://localhost:3000/api
 
 ---
 
@@ -39,3 +36,8 @@ Run:
 ```
 npm test
 ```
+
+### Local
+>Web App: https://localhost:3000
+
+>API: https://localhost:3000/api
